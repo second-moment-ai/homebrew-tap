@@ -5,12 +5,12 @@
 class Shmem < Formula
   desc "External memory system for LLMs with multi-index retrieval"
   homepage "https://github.com/second-moment-ai/shmem"
-  version "0.1.27"
+  version "0.1.28"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.1.27/shmem_0.1.27_darwin_amd64.tar.gz"
-      sha256 "a5837962982f8d0f3344bdc537d430872cd4b307f233db5a18b813a9a06c79d7"
+      url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.1.28/shmem_0.1.28_darwin_amd64.tar.gz"
+      sha256 "ae2332aaca979be0d1e9405e2ec4b807bf4f63e303d123fd0df2b38f0f217104"
 
       define_method(:install) do
         bin.install "shmem"
@@ -18,8 +18,8 @@ class Shmem < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.1.27/shmem_0.1.27_darwin_arm64.tar.gz"
-      sha256 "bfa3697659da5497d7bf1c637b5920c6ffb9f09854ad186655ba58452e930f87"
+      url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.1.28/shmem_0.1.28_darwin_arm64.tar.gz"
+      sha256 "c25021eb63b3f5ca8223101255889e26ab9103cc5217fa25b2941ec3b246a43f"
 
       define_method(:install) do
         bin.install "shmem"
@@ -30,16 +30,16 @@ class Shmem < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.1.27/shmem_0.1.27_linux_amd64.tar.gz"
-      sha256 "73cb1c490be24809326e16314ac657861c510b87f43f6ea5f176226db4eb0bd8"
+      url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.1.28/shmem_0.1.28_linux_amd64.tar.gz"
+      sha256 "239c57638b85cfaf2bafc750a5a877b6f00c39e9cb6ae30f271be844ece19066"
       define_method(:install) do
         bin.install "shmem"
         bin.install "shmem-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.1.27/shmem_0.1.27_linux_arm64.tar.gz"
-      sha256 "4c4787bb17c5f5bd540a79c730fc947d878d25046802498da2278a9bae79b244"
+      url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.1.28/shmem_0.1.28_linux_arm64.tar.gz"
+      sha256 "f80bddcd20abc5de3581eb9a1a2137075a7d5beb950c248a5c522dc73e84d13f"
       define_method(:install) do
         bin.install "shmem"
         bin.install "shmem-mcp"
