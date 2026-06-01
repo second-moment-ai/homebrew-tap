@@ -7,6 +7,9 @@ class Shmem < Formula
   homepage "https://github.com/second-moment-ai/shmem"
   version "0.2.7"
 
+  url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.2.7/shmem_0.2.7_darwin_arm64.tar.gz"
+  sha256 "d90f4ad0a8ac283ec88a6af0d6bc30d935da49dedd28fd60c5191ca96d3cb345"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/second-moment-ai/homebrew-tap/releases/download/v0.2.7/shmem_0.2.7_darwin_amd64.tar.gz"
